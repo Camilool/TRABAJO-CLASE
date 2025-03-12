@@ -1,14 +1,14 @@
 db.usuarios.insertMany([
     {
         "_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
-        "nombre": "Abuela Coco",
-        "email": "abuelacoco@gmail.com",
+        "nombre": "Feid Cáceres",
+        "email": "feidcaceres@gmail.com",
         "numero": 3126714981
     },
     {
         "_id": ObjectId('67bfcd4bf8b1b87b4646b559'),
-        "nombre": "Thanos Escobar Gaviria",
-        "email": "thanos123@gmail.com",
+        "nombre": "Messi Alberto<",
+        "email": "messialberto3@gmail.com",
         "numero": 3153458791
     }
 ]);
@@ -16,14 +16,14 @@ db.usuarios.insertMany([
 db.libros.insertMany([
     {
         _id: ('67bfc938f8b1b87b4646b553'),
-        nombre: "Gema del infinito",
-        autor: "Marvel",
+        nombre: "Vidas de papel",
+        autor: "Pablo Escobar",
         fecha_publicacion: 1976
     },
     {
         _id: ('67bfc938f8b1b87b4646b554'),
-        nombre: "Papas con arroz",
-        autor: "Mi abuela",
+        nombre: "Arepa",
+        autor: "Colombia",
         fecha_publicacion: 1976
     }
 ]);
@@ -110,4 +110,3 @@ db.historial_prestamos.insertOne(
 );
 
 
-//Ángel Manuel Gaviria Ramírez - Juan Esteban Montoya Cadavid - Jose Julian Guasa Botero - F.2996760
