@@ -44,7 +44,7 @@ db.ejemplares.insertMany([
 db.prestamos.insertMany([
     {
         "_id": ObjectId(),
-        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b554'),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b554'),1
         "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
         "fecha_prestamo": ("2025-02-26"),
         "fecha_devolucion": ("2025-03-12"),
