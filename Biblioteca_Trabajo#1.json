@@ -9,7 +9,7 @@ db.usuarios.insertMany([
         "_id": ObjectId('67bfcd4bf8b1b87b4646b559'),
         "nombre": "Messi Alberto<",
         "email": "messialberto@gmail.com",
-        "numero": 3153458791
+        "numero": 3123458791
     }
 ]);
 
