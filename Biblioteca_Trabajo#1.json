@@ -1,0 +1,113 @@
+db.usuarios.insertMany([
+    {
+        "_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
+        "nombre": "Abuela Coco",
+        "email": "abuelacoco@gmail.com",
+        "numero": 3126714981
+    },
+    {
+        "_id": ObjectId('67bfcd4bf8b1b87b4646b559'),
+        "nombre": "Thanos Escobar Gaviria",
+        "email": "thanos123@gmail.com",
+        "numero": 3153458791
+    }
+]);
+
+db.libros.insertMany([
+    {
+        _id: ('67bfc938f8b1b87b4646b553'),
+        nombre: "Gema del infinito",
+        autor: "Marvel",
+        fecha_publicacion: 1976
+    },
+    {
+        _id: ('67bfc938f8b1b87b4646b554'),
+        nombre: "Papas con arroz",
+        autor: "Mi abuela",
+        fecha_publicacion: 1976
+    }
+]);
+
+db.ejemplares.insertMany([
+    {
+        "_id": ObjectId(),
+        "libro_id": ('67bfc938f8b1b87b4646b553'),
+        "estado":"avaliable"
+    },
+    {
+        "_id": ObjectId(),
+        "libro_id": ('67bfc938f8b1b87b4646b554'),
+        "estado":"borrowed"
+    },
+]);
+
+db.prestamos.insertMany([
+    {
+        "_id": ObjectId(),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b554'),
+        "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
+        "fecha_prestamo": ("2025-02-26"),
+        "fecha_devolucion": ("2025-03-12"),
+        "estado": "activo",
+        "devolucion":[
+            {
+                "fecha_real_devolucion":(""),
+                "estado_libro":"",
+                "estado": "Pendiente"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId(),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b553'),
+        "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
+        "fecha_prestamo": ("2025-02-02"),
+        "fecha_devolucion": ("2025-03-16"),
+        "estado": "finalizado",
+        "devolucion":[
+            {
+                "fecha_real_devolucion":("2025-03-14"),
+                "estado_libro":"Bueno",
+                "estado":"Completado"
+            }
+        ]
+    }
+]);
+
+db.reservas.insertMany([
+    {
+        "_id": ObjectId(),
+        "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b559'),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b553'),
+        "fecha_recibir": (2025-02-26),
+        "fecha_limite_recibir": (2025-02-28),
+        "puesto_reserva": 1
+    },
+    {
+        "_id": ObjectId(),
+        "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b553'),
+        "fecha_recibir": ("2025-02-26"),
+        "fecha_limite_recibir": ("2025-02-28"),
+        "puesto_reserva": 2
+    }
+]);
+
+db.historial_prestamos.insertOne(
+    {
+        "_id": ObjectId(),
+        "ejemplar_id": ObjectId('67bfc938f8b1b87b4646b553'),
+        "usuario_id": ObjectId('67bfcd4bf8b1b87b4646b558'),
+        "fecha_prestamo": ("2025-02-02"),
+        "fecha_devolucion": ("2025-03-16"),
+        "estado": "finalizado",
+        "devolucion":{
+            "fecha_real_devolucion":("2025-03-14"),
+            "estado_libro":"Bueno",
+            "estado":"Completado"
+        }
+    }
+);
+
+
+//Ángel Manuel Gaviria Ramírez - Juan Esteban Montoya Cadavid - Jose Julian Guasa Botero - F.2996760
