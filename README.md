@@ -1,6 +1,6 @@
-<h2 align="center">🛍️ Gestión de Productos de Moda con Flask y MySQLDB  </h2> 
+<h2 align="center">🛍️ Gestión de Usuarios en una librería con Flask y MongoDB  </h2> 
 <br>
-<p align="center">Un sistema web para gestionar productos de moda, permitiendo agregar, editar, eliminar y visualizar productos con autenticación de usuarios.</p>
+<p align="center">Un sistema web para gestionar usuarios en una base de datos, permitiendo agregar, editar, eliminar y visualizar los usurios de la libería.</p>
 
 
 
@@ -11,8 +11,8 @@
 <br>
 
 <p align="center">✅ Registro e inicio de sesión de usuarios  <br>
-✅ Autenticación con Flask-Login   <br>
-✅ Gestión de productos (CRUD: Crear, Leer, Actualizar, Eliminar)  <br> 
+✅ CRUD de usuarios (Crear, Leer, Actualizar, Eliminar)  <br> 
+✅ Interfaz Web con Bootstrap <br>
 ✅ Base de datos con MongoDB   <br>
 ✅ Interfaz simple y funcional </p>
 
@@ -31,19 +31,12 @@
 
 <p align="center">
     <pre>
-📦 tu-proyecto  
- ┣ 📂 static/ 🎨 # Archivos CSS, imágenes y recursos estáticos  
- ┃ ┗ 📜 style.css 🎨 # Estilos de la aplicación  
- ┣ 📂 templates/ 🖥️ # Plantillas HTML  
- ┃ ┣ 📜 index.html 📄 # Página principal  
- ┃ ┣ 📜 login.html 🔑 # Página de inicio de sesión  
- ┃ ┣ 📜 register.html 📝 # Página de registro  
- ┃ ┣ 📜 add_product.html ➕ # Formulario para agregar productos  
- ┃ ┗ 📜 edit_product.html ✏️ # Formulario para editar productos  
- ┣ 📂 venv/ 🐍 # Entorno virtual de Python  
- ┣ 📜 app.py 🚀 # Código principal de la aplicación Flask  
- ┣ 📜 requirements.txt 📦 # Dependencias del proyecto  
- ┗ 📜 README.md 📖 # Documentación del proyecto  
+📦 mi-proyecto  
+ ┣ 📂 templates/      # Plantillas HTML  
+ ┃ ┣ 📜 index.html    # Página principal con la lista de usuarios  
+ ┣ 📂 static/         # Archivos CSS y otros recursos estáticos  
+ ┣ 📜 app.py         # Código principal en Flask  
+ ┣ 📜 README.md      # Documentación  
     </pre>
 </p>
 <br>
@@ -52,15 +45,7 @@
 
 <div align="center">
 
-  # 🧪 Tecnologías utilizadas 🧪  
-
-  ♻️ **Flask** (Framework web de Python)  
-
-   🟣🔵 **MySQL** (Base de datos relacional)
-   🎭 **HTML, CSS y JavaScript** (Frontend)
-   🔐 **Flask-Login** (Autenticación de usuarios)  
-   🛠 **Bootstrap / Poppins (fuente Google)** (Diseño responsivo)  
-
+  
 </div>
 
 
