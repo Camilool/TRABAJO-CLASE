@@ -39,7 +39,7 @@ def agregar():
     
     return redirect(url_for('index'))
 
-# Eliminar usuario
+# Eliminar usuario.
 @app.route('/eliminar/<int:id>')
 def eliminar(id):
     conexion = obtener_conexion()
@@ -51,7 +51,7 @@ def eliminar(id):
     
     return redirect(url_for('index'))
 
-# Cargar usuario para editar en la misma página
+# Cargar usuario para editar en la misma página.
 @app.route('/editar/<int:id>')
 def editar(id):
     conexion = obtener_conexion()
