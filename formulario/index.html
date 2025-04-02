@@ -1,61 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Biblioteca</title>
+    <title>Gestión de Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="mb-4">Formulario de Biblioteca</h2>
-        <form> 
-            <!-- Usuario -->
+        <h2 class="mb-4">Gestión de Usuarios</h2>
+        
+        <!-- Formulario para agregar/editar usuario -->
+        <form action="{{ url_for('actualizar', id=usuario_editar['_id']) if usuario_editar else url_for('agregar') }}" method="POST">
             <div class="mb-3">
-                <label for="nombreUsuario" class="form-label">Nombre del Usuario</label>
-                <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su nombre">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" value="{{ usuario_editar['nombre'] if usuario_editar else '' }}" required>
             </div>
             <div class="mb-3">
-                <label for="emailUsuario" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="emailUsuario" placeholder="usuario@example.com">
-            </div>
-            
-            <!-- Libros -->
-            <div class="mb-3">
-                <label for="tituloLibro" class="form-label">Título del Libro</label>
-                <input type="text" class="form-control" id="tituloLibro" placeholder="Ingrese el título del libro">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="usuario@example.com" value="{{ usuario_editar['email'] if usuario_editar else '' }}" required>
             </div>
             <div class="mb-3">
-                <label for="autorLibro" class="form-label">Autor</label>
-                <input type="text" class="form-control" id="autorLibro" placeholder="Nombre del autor">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese el teléfono" value="{{ usuario_editar['telefono'] if usuario_editar else '' }}" required>
             </div>
             
-            <!-- Ejemplares -->
-            <div class="mb-3">
-                <label for="ejemplarLibro" class="form-label">Número de Ejemplar</label>
-                <input type="number" class="form-control" id="ejemplarLibro" placeholder="Ingrese el número del ejemplar">
-            </div>
-            
-            <!-- Préstamos -->
-            <div class="mb-3">
-                <label for="fechaPrestamo" class="form-label">Fecha de Préstamo</label>
-                <input type="date" class="form-control" id="fechaPrestamo">
-            </div>
-            <div class="mb-3">
-                <label for="fechaDevolucion" class="form-label">Fecha de Devolución</label>
-                <input type="date" class="form-control" id="fechaDevolucion">
-            </div>
-            
-            <!-- Reservas -->
-            <div class="mb-3">
-                <label for="fechaReserva" class="form-label">Fecha de Reserva</label>
-                <input type="date" class="form-control" id="fechaReserva">
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">{{ 'Actualizar' if usuario_editar else 'Agregar' }} Usuario</button>
         </form>
+
+        <hr>
+
+        <!-- Lista de usuarios -->
+        <h3 class="mt-4">Lista de Usuarios</h3>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{ usuario.nombre }}</td>
+                    <td>{{ usuario.email }}</td>
+                    <td>{{ usuario.telefono }}</td>
+                    <td>
+                        <a href="/editar/{{ usuario._id }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="/eliminar/{{ usuario._id }}" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este usuario?');">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
-
