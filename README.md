@@ -2,7 +2,7 @@
 <br>
 <p align="center">Un sistema web para gestionar productos de moda, permitiendo agregar, editar, eliminar y visualizar productos con autenticación de usuarios.</p>
 
-![CRUDs](https://github.com/user-attachments/assets/617254db-24f4-450b-8694-4ffaee62af2c)
+
 
 
 <br>
@@ -21,7 +21,8 @@
 <h2 align="center">📊Diagrama de casos de uso📊</h2> 
 <br>
 
-![mysql](https://github.com/user-attachments/assets/38ba4726-aefa-4c8c-a0ca-6cef9c2b7c75)
+![Captura de pantalla 2025-04-02 173648](https://github.com/user-attachments/assets/0532a3d1-33a0-4bb2-ba2b-14e7cd309f74)
+
 
 
 
@@ -78,7 +79,7 @@ Antes de instalar el proyecto, asegúrate de tener lo siguiente:
 ✅ **MySQL configurado con un usuario y base de datos**  
 ✅ **Pip actualizado**  
 
-![giphy](https://github.com/user-attachments/assets/eff836c8-c030-4124-b24f-c82aea30cb3f)
+
 
 
 
@@ -114,10 +115,8 @@ Antes de instalar el proyecto, asegúrate de tener lo siguiente:
 <p align="center">INTERFAZ</p>
 <h1 align="center">Login</h1>
 
-![login](https://github.com/user-attachments/assets/e1130d62-f4d5-47bc-86bc-c9a8454edce6)
-<h1 align="center">Sistema</h1>
 
-![interfaz](https://github.com/user-attachments/assets/522a843b-312f-49d2-9761-c3539f716059)
+
 
 
 
