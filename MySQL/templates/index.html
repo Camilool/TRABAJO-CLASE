@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestión de Usuarios</title>
+</head>
+<body>
+    <h2>Gestión de Usuarios</h2>
+
+    {% if usuario_editar %}
+        <h3>Editar Usuario</h3>
+        <form action="/actualizar/{{ usuario_editar.id }}" method="post">
+            <input type="text" name="nombre" value="{{ usuario_editar.nombre }}" required>
+            <input type="email" name="email" value="{{ usuario_editar.email }}" required>
+            <input type="text" name="numero" value="{{ usuario_editar.numero }}" required>
+            <button type="submit">Actualizar</button>
+            <a href="/">Cancelar</a>
+        </form>
+    {% else %}
+        <h3>Agregar Usuario</h3>
+        <form action="/agregar" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="numero" placeholder="Número" required>
+            <button type="submit">Agregar</button>
+        </form>
+    {% endif %}
+
+    <h3>Lista de Usuarios</h3>
+    <ul>
+        {% for usuario in usuarios %}
+        <li>
+            {{ usuario.nombre }} - {{ usuario.email }} - {{ usuario.numero }}
+            <a href="/editar/{{ usuario.id }}">Editar</a>
+            <a href="/eliminar/{{ usuario.id }}">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
