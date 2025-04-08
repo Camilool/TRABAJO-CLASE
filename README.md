@@ -2,6 +2,9 @@
 <br>
 <p>Un sistema web para gestionar usuarios en una base de datos, permitiendo agregar, editar, eliminar y visualizar los usuarios de la librería.</p>
 
+![Captura de pantalla 2025-04-08 132920](https://github.com/user-attachments/assets/173ff7ef-a88e-4ce4-9aa7-e501c8e7f75e)
+
+
 <br>
 <br>
 <h2>🚀 Características </h2>
