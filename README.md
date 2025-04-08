@@ -63,9 +63,9 @@ Antes de instalar el proyecto, asegúrate de tener lo siguiente:
 
 
 ✅ **Python 3.x** instalado  
-✅ **Asegúrate de tener MYSQLDB** 
-✅ **MySQL configurado con un usuario y base de datos**  
-✅ **Pip actualizado**  
+✅ **Asegúrate de tener MongoDB**  
+✅ **Pip actualizado** 
+✅ **Paquete de pymongo** 
 
 
 
