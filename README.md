@@ -2,7 +2,7 @@
 <br>
 <p>Un sistema web para gestionar usuarios en una base de datos, permitiendo agregar, editar, eliminar y visualizar los usurios de la libería.</p>
 
-
+![Captura de pantalla 2025-04-08 132700](https://github.com/user-attachments/assets/fca16a53-2f05-4dff-9c7c-d18d152b07e4)
 
 
 <br>
