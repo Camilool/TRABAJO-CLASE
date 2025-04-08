@@ -98,9 +98,9 @@ Antes de instalar el proyecto, asegúrate de tener lo siguiente:
 <h2 align="center">📸Capturas de pantalla📸</h2> 
 
 <p align="center">INTERFAZ</p>
-<h1 align="center">Login</h1>
 
 
+![Captura de pantalla 2025-04-07 213256](https://github.com/user-attachments/assets/ebf0284b-75ae-4c94-9457-f380084aefb7)
 
 
 
@@ -110,16 +110,16 @@ Antes de instalar el proyecto, asegúrate de tener lo siguiente:
 
 <h2 align="center">🤝Contribuciones🤝</h2> 
 
-**<p align="center">Si deseas contribuir, ¡eres más que bienvenido! Por favor, abre un **Issue** o envía un **Pull Request**. Revisa las pautas de contribución en el archivo CONTRIBUTING.md (si aplica).**</p>
+**<p align="center">Si deseas contribuir, ¡eres más que bienvenido!**</p>
 
 <br>
 <br>
 
 <h2 align="center">📎Contáctate conmigo📎</h2>
 
-**<p align="center">📧Correo electrónico:** jguaza@gmail.com<br>➖<br>
-**🔑GitHub User:** Jose Julian Guaza Botero <br>➖<br>
-**📲Teléfono:** +57 3012321004
+**<p align="center">📧Correo electrónico:** camilocacereslobo@gmail.com<br>➖<br>
+**🔑GitHub User:** Camilo Cáceres Lobo <br>➖<br>
+**📲Teléfono:** +57 3206898357
 </p>
 
 <br>
