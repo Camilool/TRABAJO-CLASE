@@ -10,7 +10,7 @@
 <h2>🚀 Características </h2>
 <br>
 
-<p>✅ Registro e inicio de sesión de usuarios  <br>
+<p> <br>
 ✅ CRUD de usuarios (Crear, Leer, Actualizar, Eliminar)  <br> 
 ✅ Interfaz Web con Bootstrap <br>
 ✅ Base de datos con MySQL   <br>
